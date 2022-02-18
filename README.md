@@ -15,13 +15,13 @@ A traversal is the instantiation of an Applicative's traverse method, enabling o
 A lens is a functional pointer to a location in an Applicative. It uses the `.get()` and `.set()` methods of an Applicative type module.
 
 ### Type signatures
-Notice the similarity between the full type signature for a traversal:
-U -> V -> (x->Vy) -> Ux -> V<Uy> (or just Vy)
+Notice the similarity between the full type signature for a traversal:\
+U -> V -> (x->Vy) -> Ux -> V\<Uy\> (or just Vy)
 
-and that for a lens:
-U -> index -> V -> (Vx->Vy) -> U<Vx> -> U<Vy> (or just Vy)
+and that for a lens:\
+U -> index -> V -> (Vx->Vy) -> U\<Vx\> -> U\<Vy\> (or just Vy)
 
-Note that for lenses U<Vy> is only (potentially) different from U<Vx> at the specified index.
+Note that for lenses U\<Vy\> is only (potentially) different from U\<Vx\> at the specified index.
 
 ## Category theory
 
@@ -91,5 +91,5 @@ For a lens, the function operates on the target of the lens and the result is se
 A traversal utilizes the `.traverse()` method of the applicative type module, applying the function to each of the applicative value's to produce values of the Functor's type. These are aggregated into a value, with the functor type module's `.of()` method initializing the value and its `.ap()` and `.map()` methods doing the aggregating. Normally, the resulting value is of the same applicative type as the input. However, customizing the functor type module can create tremendous flexibility, such as when the `.map()` method is made inert by ignoring its function parameter so that `.ap()` can produce results that are not of the original applicative type. 
 
 ## References
-[Partial Lenses Implementation](https://calmm-js.github.io/partial.lenses/implementation.html)
-Eric Elliot, ["Lenses: Composable Getters and Setters for Functional Programming"](https://medium.com/javascript-scene/lenses-b85976cb0534)
+- [Partial Lenses Implementation](https://calmm-js.github.io/partial.lenses/implementation.html)
+- Eric Elliot, ["Lenses: Composable Getters and Setters for Functional Programming"](https://medium.com/javascript-scene/lenses-b85976cb0534)
