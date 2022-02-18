@@ -1,0 +1,29 @@
+{
+  "name": "@jlrwi/optic_type",
+  "version": "1.0.0",
+  "description": "Algebraic data type for optics (lenses and traversals)",
+  "main": "index.js",
+  "homepage": "https://github.com/jlrwi/optic-type",
+  "repository": "github:jlrwi/optic-type",
+  "files": [
+    "demo.js"
+  ],
+  "scripts": {
+    "pretest": "extract-test ./src/optic_type.js ./test/test_optic_type.js",
+    "test": "node ./test/test_optic_type.js > test.log",
+    "posttest": "type test.log",
+    "stage": "extract-min ./src/optic_type.js index.js"
+  },
+  "dependencies": {
+    "@jlrwi/combinators": "github:jlrwi/combinators",
+    "@jlrwi/esfunctions": "github:jlrwi/esfunctions"
+  },
+  "devDependencies": {
+    "@jlrwi/adt-tests": "github:jlrwi/adt-tests",
+    "@jlrwi/es-static-types": "github:jlrwi/es-static-types",
+    "@jlrwi/jscheck": "github:jlrwi/jscheck"
+  },
+  "author": "Jonathan Reimer",
+  "license": "ISC",
+  "type": "module"
+}
