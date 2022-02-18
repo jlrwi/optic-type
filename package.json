@@ -1,5 +1,5 @@
 {
-  "name": "@jlrwi/optic_type",
+  "name": "@jlrwi/optic-type",
   "version": "1.0.0",
   "description": "Algebraic data type for optics (lenses and traversals)",
   "main": "index.js",

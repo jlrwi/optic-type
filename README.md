@@ -25,7 +25,7 @@ Note that for lenses U<Vy> is only (potentially) different from U<Vx> at the spe
 
 ## Category theory
 
-The Optic type defines a Category in curried-static-land. In this category, objects are Applicatives (usually Applicatives of Applicatives) and morphisms are optics (lenses or traversals). 
+The Optic type defines a Category in [curried-static-land](https://github.com/jlrwi/curried-static-land). In this category, objects are Applicatives (usually Applicatives of Applicatives) and morphisms are optics (lenses or traversals). 
 
 ## Facets of control
 
